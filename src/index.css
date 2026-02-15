@@ -1,0 +1,85 @@
+/* ==============================
+   IMPORTS (MUST BE FIRST)
+================================ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+@import "tailwindcss";
+
+/* ==============================
+   GLOBAL RESET & TYPOGRAPHY
+================================ */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.015em;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==============================
+   LINKS & BUTTON BASE
+================================ */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* ==============================
+   LUXURY RED UNDERLINE
+================================ */
+
+.logo-luxury-line {
+    height: 2px;
+    background: linear-gradient(90deg,
+            rgba(239, 68, 68, 0) 0%,
+            rgba(239, 68, 68, 0.9) 40%,
+            rgba(239, 68, 68, 1) 50%,
+            rgba(239, 68, 68, 0.9) 60%,
+            rgba(239, 68, 68, 0) 100%);
+    box-shadow:
+        0 0 8px rgba(239, 68, 68, 0.8),
+        0 0 20px rgba(239, 68, 68, 0.6),
+        0 0 40px rgba(239, 68, 68, 0.4);
+    filter: blur(0.4px);
+    transition: transform 0.5s ease-out;
+    transform-origin: left;
+}
+
+/* ==============================
+   DROPDOWN ANIMATION (PREMIUM)
+================================ */
+
+@keyframes dropdownFade {
+    0% {
+        opacity: 0;
+        transform: translateY(14px) scale(0.96);
+        filter: blur(6px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+}
+
+.animate-dropdown {
+    animation: dropdownFade 0.25s ease-out forwards;
+}
