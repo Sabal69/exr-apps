@@ -1,15 +1,5 @@
-# Environment variables
 .env
-.env.local
+.env.save
 server/.env
-backend/.env
-
-# Node modules
+server/.env.save
 node_modules
-
-# Build folders
-dist
-build
-
-# Mac system files
-.DS_Store
