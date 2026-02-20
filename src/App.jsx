@@ -2,7 +2,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import AdminRoute from "./components/AdminRoute";
 
 /* ===== LAYOUTS ===== */
-import AdminLayout from "./layouts/AdminLayout";
+import AdminLayout from "./layouts/adminlayout";
 import StoreLayout from "./layouts/StoreLayout";
 
 /* ===== PUBLIC STORE PAGES ===== */
