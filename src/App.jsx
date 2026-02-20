@@ -3,7 +3,7 @@ import AdminRoute from "./components/AdminRoute";
 
 /* ===== LAYOUTS ===== */
 import AdminLayout from "./layouts/adminlayout";
-import StoreLayout from "./layouts/StoreLayout";
+import StoreLayout from "./layouts/storelayout";
 
 /* ===== PUBLIC STORE PAGES ===== */
 import Home from "./pages/home";
@@ -62,7 +62,7 @@ export default function App() {
     <Routes>
 
       {/* ================= STORE ================= */}
-      <Route element={<StoreLayout />}>
+      <Route element={<storelayout />}>
 
         <Route path="/" element={<Home />} />
 
